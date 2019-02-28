@@ -70,9 +70,8 @@ public class App {
     public void showDialog() {
         int option = JOptionPane.NO_OPTION;
         do {
-            Icon icon;
             try {
-                icon = getIconOrException().getIcon();
+                Icon icon = getIconOrException().getIcon();
                 option = JOptionPane.showConfirmDialog(null, "another one?", "This Person Doesnt Exists",
                         JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon);
             } catch (Exception e) {
